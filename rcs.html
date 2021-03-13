@@ -1,59 +1,31 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
+<link rel="stylesheet" type="text/css" href="rps.css">
 <head>
 	<title>Rock Paper Scissors</title>
 </head>
 <body>
-<div>
+<div id="heading">
 	<h1>Rock Papers Scissors</h1>
-	<p>Press any button to chose from the following options.</p>
 </div>
-<div style="margin: auto;">
-<button id="rock">Rock</button>
-<button id="paper">Paper</button>
-<button id="scissors">Scissors</button>
+<div class="container">
+	<div class="bttn" id="rock"><span>Rock</span></div>
+	<div class="bttn" id="paper"><span>Paper</span></div>
+	<div class="bttn" id="scissor"><span>Scissors</span></div>
 </div>
-<script type="text/javascript">
-	function Rand(){
-		let a=Math.floor(Math.random()*3);
-		if(a==0){
-			return "rock";
-		}
-		else if (a==1){
-			return "paper";
-		}
-		else{
-			return "scissor" ;
-		}
-	}
-	function RPS(but,rand){
-		if ((but=="rock" && rand=="paper")||(but=="paper" && rand=="scissor")||(but=="scissor" && rand=="rock")){
-			console.log('You Lose! Loooooserrrrrr.'); 
-		}
-		else{
-			console.log('Congratulations you win !!!');
-		}
-	}
-
-let btn1=document.getElementById("rock");
-let btn2=document.getElementById("paper");
-let btn3=document.getElementById("scissors");
-btn1.onclick=function(){
-	let but="rock";
-	let rand=Rand();
-	RPS(but,rand);
-	}
-btn2.onclick=function(){
-	let but="paper";
-	let rand=Rand();
-	RPS(but,rand);
-	}
-btn3.onclick=function(){
-	let but="scissor";
-	let rand=Rand();
-	RPS(but,rand);
-	}
-
+<div id="scoreboard">
+<div id="player">
+Player Score:
+</div>
+<div id="cpu">
+CPU Score:	
+</div>
+</div>
+<div id="result">
+	<h2 id="winlose"></h2>
+	<p id="resmes"></p>
+</div>
+<script type="text/javascript" src="rps.js">
 </script>
 </body>
 </html>
