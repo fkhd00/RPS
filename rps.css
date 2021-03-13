@@ -1,0 +1,90 @@
+html{
+	background-color: rgba(138, 12, 176, 0.2);
+}
+h1{
+	text-align: center;
+}
+
+.container{
+	margin: auto;
+	display:flex;
+	border: solid 3px;
+	height:200px;
+	width: 600px;
+	align-items: center;
+	justify-content: center;
+	padding:10px;
+	box-shadow: 0 0 .3rem #8A0CB0;
+	transform: all 2.07s ease;
+}
+
+.bttn{
+	border: .1em solid black;
+  	border-radius: .5rem;
+  	margin: 1rem;
+  	font-size: 2rem;
+  	padding: 1rem .5rem;
+  	transition: all .07s ease;
+  	width: 10rem;
+  	text-align: center;
+  	color: white;
+  	background:rgba(191, 63, 191, 0.9);
+  	text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+#player{
+	display: block;
+	margin: auto;
+	margin-top: 5px;
+	border:solid 3px;
+	height: 50px;
+	width: 200px;
+	padding-top: 18px;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	text-align: center;	
+}
+
+#cpu{
+	display: block;
+	margin: auto;
+	margin-top: 5px;
+	border:solid 3px;
+	height: 50px;
+	width: 200px;
+	padding-top: 18px;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	text-align: center;	
+}
+
+#scoreboard{
+	margin: auto;
+	margin-top: 50px;
+	display:flex;
+	border: solid 3px;
+	height:80px;
+	width: 450px;
+	align-items: center;
+	justify-content: center;
+	padding:10px;
+	box-shadow: 0 0 .3rem #8A0CB0;
+}
+
+#result{
+	margin: auto;
+	margin-top: 50px;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	padding:10px;
+	flex-direction: column;
+}
